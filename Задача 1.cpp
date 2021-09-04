@@ -26,10 +26,11 @@ unsigned long long fibonachi2(int n) {
 
 int main()
 {
+    setlocale(LC_ALL, "ru_RU");
     using namespace std;
     while (true) {
         int n;
-        std::cout << "put number of the number!)" << endl;
+        std::cout << "Введите номер числа Фибоначчи (0 - выход)" << endl;
         std::cin >> n;
         if (n == 0) {
             break;
